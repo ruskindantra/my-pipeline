@@ -15,12 +15,15 @@ namespace MyPipeline
                     Input = CodePipelineSource.GitHub("ruskindantra/my-pipeline", "main"),
                     Commands = new[]
                     {
-                        // "npm ci", 
-                        // "npm run build", 
-                        // "npx cdk synth"
-                        "npm install -g aws-cdk",
-                        "cdk --version",
+                        // this doesn't work
+                        "dotnet restore", 
+                        "dotnet build", 
                         "npx cdk synth"
+                        
+                        // this works
+                        // "npm install -g aws-cdk",
+                        // "cdk --version",
+                        // "npx cdk synth"
                     }
                 })
             });
