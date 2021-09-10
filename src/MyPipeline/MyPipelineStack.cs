@@ -13,7 +13,13 @@ namespace MyPipeline
                 Synth = new ShellStep("Synth", new ShellStepProps
                 {
                     Input = CodePipelineSource.GitHub("ruskindantra/my-pipeline", "main"),
-                    Commands = new string[] { "npm ci", "npm run build", "npx cdk synth" }
+                    Commands = new[]
+                    {
+                        // "npm ci", 
+                        // "npm run build", 
+                        // "npx cdk synth"
+                        "cdk synth"
+                    }
                 })
             });
         }
