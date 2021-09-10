@@ -18,7 +18,7 @@ namespace MyPipeline
                         // "npm ci", 
                         // "npm run build", 
                         // "npx cdk synth"
-                        "cdk synth"
+                        "npx cdk synth"
                     }
                 })
             });
