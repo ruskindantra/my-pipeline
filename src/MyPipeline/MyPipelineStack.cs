@@ -16,8 +16,8 @@ namespace MyPipeline
                     Commands = new[]
                     {
                         // this doesn't work
-                        "dotnet restore", 
-                        "dotnet build", 
+                        "dotnet restore src", 
+                        "dotnet build src -c Release", 
                         "npx cdk synth"
                         
                         // this works
