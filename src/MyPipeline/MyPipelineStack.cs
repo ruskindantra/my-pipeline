@@ -16,14 +16,14 @@ namespace MyPipeline
                     Commands = new[]
                     {
                         // this doesn't work
-                        "dotnet restore src", 
-                        "dotnet build src -c Release", 
-                        "npx cdk synth"
+                        // "dotnet restore src", 
+                        // "dotnet build src -c Release", 
+                        // "npx cdk synth"
                         
                         // this works
-                        // "npm install -g aws-cdk",
-                        // "cdk --version",
-                        // "npx cdk synth"
+                        "npm install -g aws-cdk",
+                        "cdk --version",
+                        "npx cdk synth"
                     }
                 })
             });
