@@ -18,6 +18,8 @@ namespace MyPipeline
                         // "npm ci", 
                         // "npm run build", 
                         // "npx cdk synth"
+                        "npm install -g aws-cdk",
+                        "cdk --version",
                         "npx cdk synth"
                     }
                 })
