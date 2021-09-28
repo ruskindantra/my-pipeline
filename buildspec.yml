@@ -34,7 +34,7 @@ phases:
       - aws --version
   build:
     commands:
-      - echo "Hello world"
+      - echo "Hello world again"
       #- apt-get update && apt-get install jq
       #- chmod u+x install.sh
   #post_build:
